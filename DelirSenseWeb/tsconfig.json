@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "sourceMap": true, // allow sourcemap support
+        "declaration": true,
+        "strict": true,
+        "strictNullChecks": true, // enable strict null checks as a best practice
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "module": "commonjs", // specify module code generation
+        "target": "es6", // specify ECMAScript target version
+        "allowJs": true,
+    },
+}
