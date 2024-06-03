@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<html lang="de">
+
+<link rel="stylesheet" href="DelirWeb.css">
+<body class="body">
+
+<!--SUBHEADER-->
+<div class="subheader">
+    <div class="subheader-text">Startseite&gt;&gt;</div>
+    <div data-hover="false" data-delay="0" class="dropdown w-dropdown">
+        <div class="w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="text-block-3">Bitte auswählen</div>
+        </div>
+    </div>
+    <div class="empty-flex"></div>
+    <a href="#" class="search-button-text">Suche....</a>
+    <a href="#" class="search-button"></a>
+</div>
+
+
+<!--TABS-->
+<!-- Tab links -->
+<!--<div class="modeTabs contentArea">-->
+<!--    <button id="infoButton" class="button" onclick="setMode(event, 'Learn')">Lernen</button>-->
+<!--    <button id="quizButton" class="button" onclick="setMode(event, 'Quiz')">Quiz</button>-->
+<!--</div>-->
+
+<script>
+    function setMode(evt, mode) {
+
+        //Mode Tabs sind gerade auskommentiert 
+        let infoArea = document.querySelector('#infoArea');
+        let quizArea = document.querySelector('#quizArea');   
+        let infoButton = document.querySelector('#infoButton');
+        let quizButton = document.querySelector('#quizButton');
+
+        infoArea.style.display = mode === "Learn" ? 'block' : 'none';
+        quizArea.style.display = mode === "Learn" ? 'none' : 'block';
+        infoButton.className =   mode === "Learn" ? infoButton.classList.add("active") :infoButton.className.replace(" active", "");
+        quizButton.className =   mode === "Learn" ? quizButton.className.replace(" active", ""): quizButton.classList.add("active");
+        
+        var tablinks;
+        
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+    }
+</script>
+
+<!--INFOPART-->
+<div class="contentArea" id="infoArea">
+    <div class="heading">Leben mit Delir</div>
+    <div class="text-1">Ein Delir ist ein Zustand akuter Verwirrtheit, der lebensgefährlich werden kann und den
+        Ärztinnen und Ärzte meistens im Spital behandeln müssen.
+        Das Bewusstsein, die Aufmerksamkeit, Wahrnehmung und Orientierung sind beeinträchtigt.</div>
+
+    <div class="heading-2">Was ist Delir?</div>
+    <div class="text-1">Die Kriterien in der zehnten Auflage der International Classification of Diseases (ICD-10)
+        für das Vorliegen eines Deliriums lautenStörung des Bewusstseins und der AufmerksamkeitWahrnehmungsstörung (Gedächtnis, Orientierung)
+        Psychomotorische StörungenSchlafstörungenAkuter Beginn und fluktuierender VerlaufNachweis einer organischen GrundlageIn der vierten
+        Auflage des DSM-IV ist ein Delirium über folgende Kriterien definiert:Störung des Bewusstseins und der AufmerksamkeitÄnderungen
+        der Wahrnehmung (Gedächtnis, Orientierung, Sprache, Auffassung)Akuter Beginn und fluktuierender VerlaufVorliegen eines
+        medizinischen KrankheitsfaktorsIn der fünften Auflage des DSM sind folgende Kriterien enthalten:Störung der Aufmerksamkeit
+        und des Bewusstseins. Das Störungsbild entwickelt sich innerhalb eines kurzen Zeitraums, wobei der ursprüngliche Zustand verändert
+        ist und der Schweregrad im Tagesverlauf fluktuiert.Kognitive Funktionen sind zusätzlich beeinträchtigt.Störungsbilder können nicht
+        besser durch eine andere, vorbestehende, gesicherte oder sich entwickelnde neurokognitive Störung erklärt werden, auch nicht im
+        Kontext von stark reduzierter Wachheit oder Koma.Es gibt einen Zusammenhang zu einem medizinischen Krankheitsfaktor,
+        einer Substanzintoxikation, einem Substanzentzug oder zu einer Exposition gegenüber einem Toxin.</div>
+
+    <div class="text-1">Im Folgenden werden grundlegende Informationen für Pflegende und Angehörige bereitgestellt.
+        Für weitere/spezifische Informationen wenden Sie sich bitte an das Fachpersonal....</div>
+    
+    <div class="mb-32" id="generalArea">
+        <div class="heading-2">Allgemeines</div>
+
+
+        <button class="accordion accordion-header">Was ist Delir?</button>
+        <div class="accordion-content">
+            <IMG class="accordion-image" src="../../Media/brain.gif">.
+            <div class="text-1">Ein Delir ist ein Zustand akuter Verwirrtheit,
+                der lebensgefährlich werden kann und den Ärztinnen und Ärzte meistens im Spital behandeln müssen. Das Bewusstsein,
+                die Aufmerksamkeit, Wahrnehmung und Orientierung sind beeinträchtigt.</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Unterschiede Demenz und Delir</button>
+        <div class="accordion-content">
+            <img class="accordion-image" src="../../Media/DemenzVsDelir.png" alt="Demenz vs. Delir">
+            <div class="text-1">Bei beiden ist die Kognition gestört; jedoch hilft Folgendes diese zu unterscheiden:
+                Bei einem Delir sind vor allem Aufmerksamkeit und Bewusstsein betroffen.
+                Demenz betrifft vor allem das Gedächtnis und andere kognitive Funktionen.
+
+                <a href="https://link.springer.com/article/10.1007/s11812-019-00093-1">Quelle</a>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Verwandte Studien</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum...</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Verhalten</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+        </div>
+
+        <!--    <div class="separator"></div>-->  
+    </div>
+
+    <div class="mb-32" id="aidArea">
+        <div class="heading-2">Tipps für Pflegende</div>
+
+        <button class="accordion accordion-header">Folge eines unbehandelten Delir</button>
+        <div class="accordion-content">
+            <div class="text-1">Ein Delir ist ein Zustand akuter Verwirrtheit,
+                der lebensgefährlich werden kann und den Ärztinnen und Ärzte meistens im Spital behandeln müssen. Das Bewusstsein,
+                die Aufmerksamkeit, Wahrnehmung und Orientierung sind beeinträchtigt.</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Kommunikation mit Angehörigen</button>
+        <div class="accordion-content">
+            <div class="text-1">Bei beiden ist die Kognition gestört; jedoch hilft Folgendes diese zu unterscheiden:
+                Bei einem Delir sind vor allem Aufmerksamkeit und Bewusstsein betroffen.
+                Demenz betrifft vor allem das Gedächtnis und andere kognitive Funktionen.
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Delir vorbeugen</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum...</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Verhalten</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+        </div>
+
+        <!--    <div class="separator"></div>-->
+    </div>
+
+    <div class="mb-32" id="familyArea">
+        <div class="heading-2">Unterstützung unter Delir leidender Menschen</div>
+
+        <button class="accordion accordion-header">Folge eines unbehandelten Delir</button>
+        <div class="accordion-content">
+            <div class="text-1">Ein Delir ist ein Zustand akuter Verwirrtheit,
+                der lebensgefährlich werden kann und den Ärztinnen und Ärzte meistens im Spital behandeln müssen. Das Bewusstsein,
+                die Aufmerksamkeit, Wahrnehmung und Orientierung sind beeinträchtigt.</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Weiterführende Hilfsangebote</button>
+        <div class="accordion-content">
+            <div class="text-1">Bei beiden ist die Kognition gestört; jedoch hilft Folgendes diese zu unterscheiden:
+                Bei einem Delir sind vor allem Aufmerksamkeit und Bewusstsein betroffen.
+                Demenz betrifft vor allem das Gedächtnis und andere kognitive Funktionen.
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Verhalten zuhause</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum...</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button class="accordion accordion-header">Siehe auch</button>
+        <div class="accordion-content">
+            <div class="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+        </div>
+
+        <!--    <div class="separator"></div>-->
+    </div>
+    
+    
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+<!--QUIZPART-->
+<div class="contentArea" id="quizArea"> 
+<p>Quiz to be done</p>
+</div>
+</body>
+
+</html>
