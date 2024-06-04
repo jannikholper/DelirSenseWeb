@@ -1,3 +1,3 @@
 # DelirSenseWeb
 
-## Wichtig! Aktuell nur in dem Script von Combined arbeiten
+## Wichtig! Aktuell nur in dem Script DelirWeb arbeiten
