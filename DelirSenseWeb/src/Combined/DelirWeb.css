@@ -236,3 +236,13 @@
 }
 
 /*QUIZ AREA*/
+
+
+.wrongAnswer{
+    color: red;
+    background-color: red;
+}
+
+.correctAnswer{
+    color : green;
+}

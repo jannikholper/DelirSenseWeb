@@ -16,6 +16,12 @@
                 var tblRow = "<div>" + f.questionText  +"</div>"
                 $(tblRow).appendTo("#userdata tbody");
 
+                var correctAnswer = "<div>" + f.correctAnswerFeedbackText  +"</div>"
+                var wrongAnswer = "<div>" + f.wrongAnswerFeedbackText  +"</div>"
+
+                $(correctAnswer).appendTo("#userdata tbody");
+                $(wrongAnswer).appendTo("#userdata tbody");
+                
                 $.each(f.answerOptions, function(i, f) {
                     var tblRow = "<div>" + f  +"</div>"
                     $(tblRow).appendTo("#userdata tbody");
