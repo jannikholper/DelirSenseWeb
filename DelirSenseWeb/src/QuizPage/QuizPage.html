@@ -7,5 +7,32 @@
 </head>
 <body>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+    $(function() {
+        $.getJSON('devQuizData.json', function(data) {
+            $.each(data.questions, function(i, f) {
+                var tblRow = "<div>" + f.questionText  +"</div>"
+                $(tblRow).appendTo("#userdata tbody");
+
+                $.each(f.answerOptions, function(i, f) {
+                    var tblRow = "<div>" + f  +"</div>"
+                    $(tblRow).appendTo("#userdata tbody");
+                });
+            });
+        });
+    });
+</script>
+
+<table id= "userdata" border="2">
+    <thead>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
 </body>
 </html>
