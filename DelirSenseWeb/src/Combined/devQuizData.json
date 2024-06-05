@@ -1,0 +1,28 @@
+﻿{
+  "questions": [
+    {
+      "questionText" : "Was ist ein Delir?",
+      "answerOptions" : ["A", "B", "C", "Eine Krankheit"],
+      "correctAnswerIndex" : 3,
+      "answerFeedbackText" : "Delir ist eine Krankheit"
+    },   
+    {
+      "questionText" : "Wähle einen Buchstaben",
+      "answerOptions" : ["D", "E", "F", "G"],
+      "correctAnswerIndex" : 2,
+      "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
+    },    
+    {
+      "questionText" : "Wähle einen Buchstaben",
+      "answerOptions" : ["H", "I", "J", "K"],
+      "correctAnswerIndex" : 1,
+      "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
+    },    
+    {
+      "questionText" : "Wähle einen Buchstaben",
+      "answerOptions" : ["L", "M", "N", "O"],
+      "correctAnswerIndex" : 0,    
+      "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
+    }
+  ]
+}
