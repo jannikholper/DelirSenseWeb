@@ -104,6 +104,13 @@
         <button class="accordion accordion-header">Verwandte Studien</button>
         <div class="accordion-content">
             <div class="text-1 margin-b-16 margin-t-16">Lorem ipsum...</div>
+            <iframe class="accordion-youtube-content margin-t-16 margin-b-16"
+                    src="https://www.youtube.com/embed/2OnjDQ09wCQ">
+            </iframe>
+            <div class="margin-b-16 margin-l-10">
+                <a href="https://www.youtube.com/watch?v=2OnjDQ09wCQ" target="_blank">Quelle</a>
+            </div>
+
         </div>
 
         <div class="separator"></div>
@@ -113,6 +120,10 @@
             <div class="text-1 margin-b-16 margin-t-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                 Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+            <video class="accordion-video-content margin-b-16 margin-t-16" controls>
+                <source src="../../Media/movie.mp4" type="video/mp4">
+                <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">Quelle</a>
+            </video>
         </div>
 
         <!--    <div class="separator"></div>-->  
@@ -246,8 +257,8 @@
         <label class="text-1 margin-b-16 margin-t-16" id="option4Text" for="option4">Option 4</label>
     </div>
 
-    <button id="quizNextButton" class="contentFit" onclick="getRandomQuestion()">Next</button>
-    <button id="quizAnswerButton" class="contentFit" onclick="getAnswer()">Resolve</button>
+    <button id="quizNextButton" class="align-right quizContinueButton margin-t-16" onclick="getRandomQuestion()">Next</button>
+    <button id="quizAnswerButton" class="align-right quizContinueButton margin-t-16" onclick="getAnswer()">Resolve</button>
     
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
@@ -283,8 +294,6 @@
     let answeredQuestions = [];
     let correctAnswerIndex = 0;
     let answerFeedback = "";
-    
-    // opt1.innerHTML = "Hallo";
     
     function getRandomQuestion() {
         // feedbackText.style.display = "none";

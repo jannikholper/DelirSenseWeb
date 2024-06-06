@@ -1,0 +1,130 @@
+﻿{
+    "chapter": [
+      {
+        "chapterTitle" : "Allgemein",
+        "chapterIntroText" : "",
+        "subChapter" : [
+          {
+            "headLine" : "Was ist Delir?",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "", 
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Unterschied Demenz vs Delir",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "../../Media/DemenzVsDelir.pn",
+            "relativeGifPath" : "../../Media/brain.gif",
+            "relativeVideoPath" :  "../../Media/movie.mp4",
+            "youtubeVideoID" : "2OnjDQ09wCQ",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verwandte Studien",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verhalten",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          }
+        ]
+      },
+      {
+        "chapterTitle" : "Tipps für Pflegende",
+        "chapterIntroText" : "",
+        "subChapter" : [
+          {
+            "headLine" : "Was ist Delir?",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "", 
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Unterschied Demenz vs Delir",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "../../Media/DemenzVsDelir.pn",
+            "relativeGifPath" : "../../Media/brain.gif",
+            "relativeVideoPath" :  "../../Media/movie.mp4",
+            "youtubeVideoID" : "2OnjDQ09wCQ",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verwandte Studien",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verhalten",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          }
+        ]
+      },
+      {
+        "chapterTitle" : "Tipps für Angehörige",
+        "chapterIntroText" : "",
+        "subChapter" : [
+          {
+            "headLine" : "Was ist Delir?",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "", 
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Unterschied Demenz vs Delir",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "../../Media/DemenzVsDelir.pn",
+            "relativeGifPath" : "../../Media/brain.gif",
+            "relativeVideoPath" :  "../../Media/movie.mp4",
+            "youtubeVideoID" : "2OnjDQ09wCQ",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verwandte Studien",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          },
+          {
+            "headLine" : "Verhalten",
+            "subChapterText" : "Das ist Delir: ",
+            "relativeImagePath" : "",
+            "relativeGifPath" : "",
+            "relativeVideoPath" :  "",
+            "youtubeVideoID" : "",
+            "mediaSource" : ""
+          }
+        ]
+      }
+    ]
+}

@@ -88,6 +88,10 @@
     margin-top: 100px;
 }
 
+.align-right {
+    margin-left: auto;
+    margin-right: 0;
+}
 
 .body {
     background-color: #f3f3f3;
@@ -265,6 +269,20 @@
     /*color: #006a80;*/
 }
 
+.accordion-youtube-content{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+}
+
+.accordion-video-content {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+}
+
 .contentArea {
     max-width: 70%;
     position: relative;
@@ -290,6 +308,9 @@
     padding: 16px;
     border: #d7d7d7;
     background-color: #ececec;
+    height: fit-content;
+    word-wrap: break-word;
+    /*overflow: auto;*/
 }
 
 .questionArea {
@@ -301,6 +322,16 @@
 .feedbackArea {
     background-color: #0496b2;
     padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     height: fit-content;
     color: white;
+}
+
+
+.quizContinueButton{
+    padding: 16px;
+    min-width: 10%;
+    width: fit-content;
+    height: fit-content;
 }
