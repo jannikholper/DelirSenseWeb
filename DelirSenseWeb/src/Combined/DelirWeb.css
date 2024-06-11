@@ -93,6 +93,15 @@
     margin-right: 0;
 }
 
+.align-bottom {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.flex {
+    width: auto;
+}
+
 .body {
     background-color: #f3f3f3;
     /*border: 1px solid gray;*/
@@ -242,7 +251,7 @@
     /*color: #ffffff;*/
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    /*width: 100%;*/
     text-align: left;
     border: none;
     outline: none;
@@ -256,17 +265,26 @@
 }
 
 .accordion-content {
-    padding: 0 18px;
+    font-family: Poppins, serif;
+    padding: 0 24px;
     background-color: #f3f3f3;
     display: none;
     overflow: hidden;
 }
 
 .accordion-header {
-    padding-left: 05px;
+    font-family: Poppins, serif;
+    /*padding-left: 05px;*/
     font-size: 16px;
     font-weight: bold;
+    width: fit-content;
     /*color: #006a80;*/
+}
+
+.flex-row {
+    display: flex;
+    /*width: 97.5%;*/
+    justify-content: flex-start;
 }
 
 .accordion-youtube-content{
@@ -295,23 +313,45 @@
 .wrongAnswer{
     padding: 16px;
     border: #d7d7d7;
-    background-color: #fa8585;
+    background-color: #fdeeee !important;
+    outline: 2px solid #fa8585;
 }
 
 .correctAnswer{
     padding: 16px;
     border: #d7d7d7;
-    background-color : #82f882;
+    background-color : #eafdea !important;
+    outline: 2px solid #82f882;
+}
+
+.correctAnswerColor {
+    color : #82f882
+}
+
+.wrongAnswerColor {
+    color : #fa8585
+}
+
+.selectedAnswer{
+    padding: 16px;
+    /*border: #3bb3cb 5px;*/
+    /*box-shadow: 1px 1px 1px 1px #3bb3cb;*/
+    outline: 2px solid #3bb3cb;
+    background-color: #ececec;
+    height: fit-content;
+    word-wrap: break-word;
 }
 
 .quizOption {
     padding: 16px;
-    border: #d7d7d7;
+    /*border: #d7d7d7;*/
     background-color: #ececec;
     height: fit-content;
     word-wrap: break-word;
     /*overflow: auto;*/
 }
+
+
 
 .questionArea {
     background-color: #006a80;
@@ -334,4 +374,14 @@
     min-width: 10%;
     width: fit-content;
     height: fit-content;
+}
+
+.center {
+    align-content: center;
+}
+
+.answerFeedbackIcon {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
 }
