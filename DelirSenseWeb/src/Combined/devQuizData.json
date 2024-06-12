@@ -1,28 +1,92 @@
 ﻿{
-  "questions": [
+  "quizzes" : [
     {
-      "questionText" : "Was ist ein Delir?",
-      "answerOptions" : ["A", "B", "C", "Eine Krankheit"],
-      "correctAnswerIndex" : 3,
-      "answerFeedbackText" : "Delir ist eine Krankheit"
-    },   
+      "quizId" : "generalQuiz",
+      "questions": [
+        {
+          "questionText" : "Allgemein: Frage A",
+          "answerOptions" : ["Allgemein: Antwort A", "Allgemein: Antwort B", "Allgemein: Antwort C", "Allgemein: Antwort Z"],
+          "correctAnswerIndex" : 3,
+          "answerFeedbackText" : "Delir ist eine Krankheit"
+        },
+        {
+          "questionText" : "Allgemein: Frage B",
+          "answerOptions" : ["Allgemein: Antwort D", "Allgemein: Antwort E", "Allgemein: Antwort F", "Allgemein: Antwort G"],
+          "correctAnswerIndex" : 2,
+          "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Allgemein: Frage C",
+          "answerOptions" : ["Allgemein: Antwort H", "Allgemein: Antwort I", "Allgemein: Antwort J", "Allgemein: Antwort K"],
+          "correctAnswerIndex" : 1,
+          "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Allgemein: Frage D",
+          "answerOptions" : ["Allgemein: Antwort L", "Allgemein: Antwort M", "Allgemein: Antwort N", "Allgemein: Antwort O"],
+          "correctAnswerIndex" : 0,
+          "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
+        }
+      ]
+    },
+
     {
-      "questionText" : "Wähle einen Buchstaben",
-      "answerOptions" : ["D", "E", "F", "G"],
-      "correctAnswerIndex" : 2,
-      "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
-    },    
+      "quizId" : "familyQuiz",
+      "questions": [
+        {
+          "questionText" : "Familie: FrageA",
+          "answerOptions" : ["Familie: Antwort A", "Familie: Antwort B", "Familie: Antwort C", "Familie: Antwort D"],
+          "correctAnswerIndex" : 3,
+          "answerFeedbackText" : "Delir ist eine Krankheit"
+        },
+        {
+          "questionText" : "Familie: FrageB",
+          "answerOptions" : ["Familie: Antwort D", "Familie: Antwort E", "Familie: Antwort F", "Familie: Antwort G"],
+          "correctAnswerIndex" : 2,
+          "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Familie: FrageC",
+          "answerOptions" : ["Familie: Antwort H", "Familie: Antwort I", "Familie: Antwort J", "Familie: Antwort K"],
+          "correctAnswerIndex" : 1,
+          "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Familie: FrageD",
+          "answerOptions" : ["Familie: Antwort L", "Familie: Antwort M", "Familie: Antwort N", "Familie: Antwort O"],
+          "correctAnswerIndex" : 0,
+          "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
+        }
+      ]
+    },
     {
-      "questionText" : "Wähle einen Buchstaben",
-      "answerOptions" : ["H", "I", "J", "K"],
-      "correctAnswerIndex" : 1,
-      "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
-    },    
-    {
-      "questionText" : "Wähle einen Buchstaben",
-      "answerOptions" : ["L", "M", "N", "O"],
-      "correctAnswerIndex" : 0,    
-      "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
+      "quizId" : "hospitalQuiz",
+      "questions": [
+        {
+          "questionText" : "Pfleger-Quiz: Frage A",
+          "answerOptions" : ["Pfleger-Quiz: Antwort A", "Pfleger-Quiz: Antwort B", "Pfleger-Quiz: Antwort C", "Pfleger-Quiz: Antwort Z"],
+          "correctAnswerIndex" : 3,
+          "answerFeedbackText" : "Delir ist eine Krankheit"
+        },
+        {
+          "questionText" : "Pfleger-Quiz: Frage B",
+          "answerOptions" : ["Pfleger-Quiz: Antwort D", "Pfleger-Quiz: Antwort E", "Pfleger-Quiz: Antwort F", "Pfleger-Quiz: Antwort G"],
+          "correctAnswerIndex" : 2,
+          "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Pfleger-Quiz: Frage C",
+          "answerOptions" : ["Pfleger-Quiz: Antwort H", "Pfleger-Quiz: Antwort I", "Pfleger-Quiz: Antwort J", "Pfleger-Quiz: Antwort K"],
+          "correctAnswerIndex" : 1,
+          "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
+        },
+        {
+          "questionText" : "Pfleger-Quiz: Frage D",
+          "answerOptions" : ["Pfleger-Quiz: Antwort L", "Pfleger-Quiz: Antwort M", "Pfleger-Quiz: Antwort N", "Pfleger-Quiz: Antwort O"],
+          "correctAnswerIndex" : 0,
+          "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
+        }
+      ]
     }
   ]
 }
