@@ -376,6 +376,13 @@
     height: fit-content;
 }
 
+.quizShowAnswerButton{
+    padding: 16px;
+    min-width: 10%;
+    width: fit-content;
+    height: fit-content;
+}
+
 .center {
     align-content: center;
 }
@@ -384,4 +391,10 @@
     margin-top: 16px;
     margin-bottom: 16px;
     margin-right: 16px;
+}
+
+.quizArea {
+    max-width: 100%;
+    position: relative;
+    left: 0%;
 }
