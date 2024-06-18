@@ -60,29 +60,29 @@
       ]
     },
     {
-      "quizId" : "demo",
+      "quizId" : "demoQuiz",
       "questions": [
         {
-          "questionText" : "Familie: FrageA",
-          "answerOptions" : ["Familie: Antwort A", "Familie: Antwort B", "Familie: Antwort C", "Familie: Antwort D"],
+          "questionText" : "Demo: FrageA",
+          "answerOptions" : ["Demo: Antwort A", "Demo: Antwort B", "Demo: Antwort C", "Demo: Antwort D"],
           "correctAnswerIndex" : 3,
           "answerFeedbackText" : "Delir ist eine Krankheit"
         },
         {
-          "questionText" : "Familie: FrageB",
-          "answerOptions" : ["Familie: Antwort D", "Familie: Antwort E", "Familie: Antwort F", "Familie: Antwort G"],
+          "questionText" : "Demo: FrageB",
+          "answerOptions" : ["Demo: Antwort D", "Demo: Antwort E", "Demo: Antwort F", "Demo: Antwort G"],
           "correctAnswerIndex" : 2,
           "answerFeedbackText" : "Das 'F' ist die richtige Wahl"
         },
         {
-          "questionText" : "Familie: FrageC",
-          "answerOptions" : ["Familie: Antwort H", "Familie: Antwort I", "Familie: Antwort J", "Familie: Antwort K"],
+          "questionText" : "Demo: FrageC",
+          "answerOptions" : ["Demo: Antwort H", "Demo: Antwort I", "Demo: Antwort J", "Demo: Antwort K"],
           "correctAnswerIndex" : 1,
           "answerFeedbackText" : "Das 'I' ist die richtige Wahl"
         },
         {
-          "questionText" : "Familie: FrageD",
-          "answerOptions" : ["Familie: Antwort L", "Familie: Antwort M", "Familie: Antwort N", "Familie: Antwort O"],
+          "questionText" : "Demo: FrageD",
+          "answerOptions" : ["Demo: Antwort L", "Demo: Antwort M", "Demo: Antwort N", "Demo: Antwort O"],
           "correctAnswerIndex" : 0,
           "answerFeedbackText" : "Das 'L' ist die richtige Wahl"
         }
