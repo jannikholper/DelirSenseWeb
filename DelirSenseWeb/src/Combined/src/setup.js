@@ -3,6 +3,8 @@
 //cannot be shortened
 import {QuizController} from "../src/quizController.js";
 
+
+
 $(document).ready(function () {
     let quizzes = document.getElementsByClassName("quizArea");
     let quizModels = [];
@@ -46,21 +48,22 @@ $(document).ready(function () {
     }
 
     //Mode Tabs sind gerade auskommentiert 
-    let infoArea = document.querySelector('#infoArea');
-    let quizArea = document.querySelector('#quizArea');
-    let infoButton = document.querySelector('#infoButton');
-    let quizButton = document.querySelector('#quizButton');
-
-    infoArea.style.display = mode === "Learn" ? 'block' : 'none';
-    quizArea.style.display = mode === "Learn" ? 'none' : 'block';
-    infoButton.className =   mode === "Learn" ? infoButton.classList.add("active") :infoButton.className.replace(" active", "");
-    quizButton.className =   mode === "Learn" ? quizButton.className.replace(" active", ""): quizButton.classList.add("active");
-
-    let tablinks;
-
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+    // let infoArea = document.querySelector('#infoArea');
+    // let quizArea = document.querySelector('#quizArea');
+    // let infoButton = document.querySelector('#infoButton');
+    // let quizButton = document.querySelector('#quizButton');
+    //
+    // infoArea.style.display = mode === "Learn" ? 'block' : 'none';
+    // quizArea.style.display = mode === "Learn" ? 'none' : 'block';
+    // infoButton.className =   mode === "Learn" ? infoButton.classList.add("active") :infoButton.className.replace(" active", "");
+    // quizButton.className =   mode === "Learn" ? quizButton.className.replace(" active", ""): quizButton.classList.add("active");
+    //
+    // let tablinks;
+    //
+    // tablinks = document.getElementsByClassName("tablinks");
+    // for (i = 0; i < tablinks.length; i++) {
+    //     tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    
 });
 

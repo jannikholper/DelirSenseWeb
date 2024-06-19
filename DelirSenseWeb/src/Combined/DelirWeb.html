@@ -1,11 +1,14 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html "http://www.w3.org/TR/html4/frameset.dtd">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <html lang="de">
 
 <link rel="stylesheet" href="style/DelirWeb.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="body">
+<my-custom-element size="100"></my-custom-element>
 
 <!--SUBHEADER-->
 <div class="subheader">
@@ -22,6 +25,7 @@
 </div>
 
 
+
 <!--TABS-->
 <!-- Tab links -->
 <!--<div class="modeTabs contentArea margin-16">-->
@@ -31,6 +35,100 @@
 
 <!--INFOPART-->
 <div class="contentArea" id="infoArea">
+    
+    
+    <div class="heading margin-t-24 margin-b-24">DelirSense - Ein Projekt mit der Hochschule Düsseldorf</div>
+
+    <div class="text-1 margin-b-16 margin-t-16">Das DelirSense-Projekt ....
+    
+    </div>
+
+    <div class="margin-t-50"></div>
+    
+    <div class="heading-2 margin-t-16 margin-b-16">Ziele</div>
+    <div class="text-1 margin-b-16 margin-t-16">Ziele des Projektes....
+    </div>
+
+    <div class="margin-t-100"></div>
+
+
+    <div class="heading-2 margin-t-16 margin-b-16">Ergebnisse des Projektes</div>
+    <div class="CSSgal">
+        <!-- Don't wrap targets in parent -->
+        <s id="s1"></s>
+        <s id="s2"></s>
+        <s id="s3"></s>
+        <s id="s4"></s>
+
+        <div class="slider">
+            <div>
+                <video class="slider-Video margin-b-16 margin-t-16" controls>
+                    <source src="../../Media/delir_ants.mp4" type="video/mp4">
+                    <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">Quelle</a>
+                </video>
+                <p>Eine Patientin, die Ameisen sieht</p>
+            </div>
+            <div>
+                <video class="slider-Video margin-b-16 margin-t-16" controls>
+                    <source src="../../Media/delir_homeless.mp4" type="video/mp4">
+                    <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">Quelle</a>
+                </video>
+                <p>Wie eine Frau durch ihren Delir obdachlos wurde</p>
+            </div>
+            <div>
+                <video class="slider-Video margin-b-16 margin-t-16" controls>
+                    <source src="../../Media/delir_language.mp4" type="video/mp4">
+                    <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">Quelle</a>
+                </video>
+                <p>Sprachbarrieren im Delir</p>
+            </div>
+<!--            <div class="slider-Video">-->
+<!--                <h2>Slide 4</h2>-->
+<!--            </div>-->
+        </div>
+
+        <div class="prevNext">
+
+            <div>
+                <a href="#s3">
+                    <div class="material-icons buttonIcon">chevron_left</div>
+                </a>
+                <a href="#s2">
+                    <div class="material-icons buttonIcon">chevron_right</div>
+                </a>
+            </div>
+            <div>
+                <a href="#s1">
+                    <div class="material-icons buttonIcon">chevron_left</div>
+                </a>
+                <a href="#s3">
+                    <div class="material-icons buttonIcon">chevron_right</div>
+                </a>
+<!--                <a href="#s2"></a><a href="#s1"></a>-->
+            </div>
+            <div>
+                <a href="#s2">
+                    <div class="material-icons buttonIcon">chevron_left</div>
+                </a>
+                <a href="#s1">
+                    <div class="material-icons buttonIcon">chevron_right</div>
+                </a>
+            </div>
+<!--            <div><a href="#s3"></a><a href="#s1"></a></div>-->
+        </div>
+        
+        <div class="bullets">
+            <a href="#s1"></a>
+            <a href="#s2"></a>
+            <a href="#s3"></a>
+<!--            <a href="#s4">4</a>-->
+        </div>
+
+    </div>
+
+
+    <div class="margin-t-100"></div>
+    
     <div class="heading margin-t-24 margin-b-24">Leben mit Delir</div>
     <div class="text-1 margin-b-16 margin-t-16">Ein Delir ist ein Zustand akuter Verwirrtheit, der lebensgefährlich werden kann und den
         Ärztinnen und Ärzte meistens im Spital behandeln müssen.
@@ -152,8 +250,8 @@
                     <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
                 </div>
 
-                <button class="align-right quizContinueButton margin-t-16">Next</button>
-                <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+                <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+                <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
 
             </div>
 
@@ -235,8 +333,8 @@
                 <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
             </div>
 
-            <button class="align-right quizContinueButton margin-t-16">Next</button>
-            <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+            <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+            <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
 
         </div>
         
@@ -400,8 +498,8 @@
                     <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
                 </div>
 
-                <button class="align-right quizContinueButton margin-t-16">Next</button>
-                <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+                <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+                <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
 
             </div>
         </div>
@@ -446,8 +544,8 @@
                     <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
                 </div>
 
-                <button class="align-right quizContinueButton margin-t-16">Next</button>
-                <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+                <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+                <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
                 <div class="margin-b-50"></div>
             </div>
         </div>
@@ -485,8 +583,8 @@
                     <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
                 </div>
 
-                <button class="align-right quizContinueButton margin-t-16">Next</button>
-                <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+                <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+                <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
                 <div class="margin-b-50"></div>
             </div>
         </div>
@@ -524,8 +622,8 @@
                     <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
                 </div>
 
-                <button class="align-right quizContinueButton margin-t-16">Next</button>
-                <button class="align-right quizShowAnswerButton margin-t-16">Resolve</button>
+                <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+                <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
                 <div class="margin-b-50"></div>
             </div>
         </div>
