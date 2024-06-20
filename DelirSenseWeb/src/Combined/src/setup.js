@@ -3,8 +3,6 @@
 //cannot be shortened
 import {QuizController} from "../src/quizController.js";
 
-
-
 $(document).ready(function () {
     let quizzes = document.getElementsByClassName("quizArea");
     let quizModels = [];
@@ -12,7 +10,7 @@ $(document).ready(function () {
     let quizIndex = 0;
     for (const quiz of quizzes)
     {
-        console.error(quizIndex);
+        // console.error(quizIndex);
         let newController = new QuizController(quiz);
         quizModels[quizIndex] = newController;
         quizIndex++;
@@ -66,4 +64,6 @@ $(document).ready(function () {
     // }
     
 });
+
+
 

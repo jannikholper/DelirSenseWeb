@@ -1,7 +1,6 @@
 ﻿
 
 export class QuizController {
-    
     constructor(quiz) {
         this.quizModel = {}
 
