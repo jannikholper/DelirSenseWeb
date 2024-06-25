@@ -254,7 +254,7 @@
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     /*background-color: #006a80;*/
-    background-color: #ffffff;
+    background-color: #efefef;
     color: #006a80;
     /*color: #ffffff;*/
     cursor: pointer;
@@ -264,6 +264,7 @@
     border: none;
     outline: none;
     transition: 0.4s;
+    margin: 10px 0;
 }
 
 .active, .accordion:hover {
@@ -273,9 +274,11 @@
 }
 
 .accordion-content {
+    margin-top: -10px;
     font-family: Poppins, serif;
     padding: 0 24px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: #efefef;
     display: none;
     overflow: hidden;
 }
