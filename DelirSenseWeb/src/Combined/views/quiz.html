@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .contentArea {
+        background-color: #ffffff;
+        max-width: 70%;
+        position: relative;
+        left: 15%;
+        padding: 24px;
+    }
+
+    /*QUIZ AREA*/
+
+
+    .wrongAnswer{
+        padding: 16px;
+        border: #d7d7d7;
+        background-color: #fdeeee !important;
+        outline: 2px solid #fa8585;
+    }
+
+    .correctAnswer{
+        padding: 16px;
+        border: #d7d7d7;
+        background-color : #eafdea !important;
+        outline: 2px solid #82f882;
+    }
+
+    .correctAnswerColor {
+        color : #82f882
+    }
+
+    .wrongAnswerColor {
+        color : #fa8585
+    }
+
+    .selectedAnswer{
+        padding: 16px;
+        /*border: #3bb3cb 5px;*/
+        /*box-shadow: 1px 1px 1px 1px #3bb3cb;*/
+        outline: 2px solid #3b83cb;
+        background-color: #ececec;
+        height: fit-content;
+        word-wrap: break-word;
+    }
+
+    .quizOption {
+        padding: 16px;
+        /*border: #d7d7d7;*/
+        background-color: #beeaf3;
+        height: fit-content;
+        word-wrap: break-word;
+        /*overflow: auto;*/
+    }
+
+
+
+    .questionArea {
+        background-color: #006a80;
+        padding: 16px;
+        color: white;
+    }
+
+    .feedbackArea {
+        background-color: #0496b2;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: fit-content;
+        color: white;
+    }
+
+
+    .quizContinueButton{
+        padding: 16px;
+        min-width: 10%;
+        border-width: 1px;
+        background-color: whitesmoke;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .quizShowAnswerButton{
+        padding: 16px;
+        min-width: 10%;
+        border-width: 1px;
+        background-color: whitesmoke;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .quizOption {
+        padding: 16px;
+        /*border: #d7d7d7;*/
+        background-color: #beeaf3;
+        height: fit-content;
+        word-wrap: break-word;
+        /*overflow: auto;*/
+    }
+
+
+
+    .questionArea {
+        background-color: #006a80;
+        padding: 16px;
+        color: white;
+    }
+
+    .heading {
+        color: #006a80;
+        font-size: 48px;
+        font-family: Poppins, serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .heading-2 {
+        color: #006a80;
+        font-family: Poppins, serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .heading-3 {
+        /*color: #006a80;*/
+        font-size: 24px;
+        font-weight: 400;
+        font-family: Poppins, serif;
+    }
+
+    .text-1 {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Poppins, serif;
+    }
+
+    .text-2 {
+        color: #006a80;
+        font-size: 10px;
+        font-weight: lighter;
+        font-family: Poppins, serif;
+    }
+
+    .margin-t-4 {
+        margin-top: 4px;
+    }
+
+    .margin-t-16 {
+        margin-top: 16px;
+    }
+    .margin-t-24 {
+        margin-top: 24px;
+    }
+
+    .margin-b-32{
+        margin-bottom: 32px;
+    }
+
+    .margin-b-4 {
+        margin-bottom: 4px;
+    }
+
+    .margin-b-16 {
+        margin-bottom: 16px;
+    }
+    .margin-b-24 {
+        margin-bottom: 24px;
+    }
+
+    .margin-10 {
+        margin: 10px;
+    }
+
+    .margin-16 {
+        margin: 16px;
+    }
+
+    .margin-l-10 {
+        margin-left: 10px;
+    }
+
+    .margin-r-10 {
+        margin-right: 10px;
+    }
+
+    .margin-t-100 {
+        margin-top: 100px;
+    }
+
+    .margin-t-50 {
+        margin-top: 50px;
+    }
+
+    .margin-b-50 {
+        margin-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+
+<div class="quizArea" quizId="generalQuiz" id="generalQuiz">
+
+    <div class="heading-2 margin-t-16 margin-b-16">Quiz</div>
+
+    <div class="heading-3 questionArea margin-t-4 margin-b-4">Was ist ein?</div>
+    <div class="text-1 feedbackArea margin-t-4 margin-b-4">Das ist feedback</div>
+
+    <div class="quizOption margin-b-4 margin-t-4 flex-row center">
+        <div class="material-icons margin-b-16 margin-t-16 margin-r-10">clear</div>
+        <label class="text-1 margin-b-16 margin-t-16">Option 1</label>
+    </div>
+    <div class="quizOption margin-b-4 margin-t-4 flex-row">
+        <div class="material-icons margin-b-16 margin-t-16 margin-r-10">check</div>
+        <label class="text-1 margin-b-16 margin-t-16">Option 2</label>
+    </div>
+    <div class="quizOption margin-b-4 margin-t-4 flex-row">
+        <div class="material-icons margin-b-16 margin-t-16 margin-r-10">check</div>
+        <label class="text-1 margin-b-16 margin-t-16">Option 3</label>
+    </div>
+    <div class="quizOption margin-b-4 margin-t-4 flex-row">
+        <div class="material-icons margin-b-16 margin-t-16 margin-r-10">check</div>
+        <label class="text-1 margin-b-16 margin-t-16">Option 4</label>
+    </div>
+
+    <button class="align-right quizContinueButton margin-t-16">Nächste Frage</button>
+    <button class="align-right quizShowAnswerButton margin-t-16">Auflösen</button>
+
+</div>
+
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script>
+    function init(quiz) {
+        this.quizModel = {}
+        quiz = document.getElementById("generalQuiz")
+        let options = [];
+        this.answerOptionIndex = 0;
+        this.answerFeedback = "";
+        this.quizModel.quizID = quiz.getAttribute("quizId");
+
+
+        //init children
+        for (const child of quiz.children) {
+            if (child.classList.contains("quizOption")) {
+                options[this.answerOptionIndex] = child;
+                let answerIndex = this.answerOptionIndex;
+                let quizID = this.quizModel.quizID
+                child.addEventListener("click", ()=> {
+                    this.selectAnswer(answerIndex, quizID)
+                });
+                this.answerOptionIndex++;
+            }
+
+            if(child.classList.contains("feedbackArea")) {
+                this.quizModel.feedbackText = child;
+            }
+            if(child.classList.contains("questionArea")) {
+                this.quizModel.questionText = child;
+            }
+            if(child.classList.contains("quizContinueButton")) {
+                this.quizModel.nextQuestionButton = child;
+                this.quizModel.nextQuestionButton.style.display = "none";
+                child.addEventListener("click", ()=> {
+                    this.getRandomQuestion(this.quizModel.quizID)
+                });
+            }
+            if(child.classList.contains("quizShowAnswerButton")) {
+                this.quizModel.showAnswerButton = child;
+                child.addEventListener("click", () =>{
+                    this.getAnswer(this.quizModel.quizID)
+                });
+            }
+        }
+        this.quizModel.options = options;
+        this.quizModel.answeredQuestions = [];
+        this.quizModel.correctAnswerIndex = 0;
+
+
+        $.getJSON('../data/devQuizData.json', (data) => {
+
+            for (const quiz of data.quizzes) {
+                if (quiz.quizId === this.quizModel.quizID) {
+                    this.quizModel.quizData = quiz
+                }
+            }
+
+            this.getRandomQuestion(this.quizModel.quizID);
+        });
+    }
+
+
+    function getRandomQuestion(quizID) {
+
+        // let currentQuiz = quizModels.find(quiz => quiz.quizID === quizID);
+
+        this.quizModel.feedbackText.innerHTML = "Wähle eine Antwort";
+        this.quizModel.showAnswerButton.style.display = "block";
+        this.quizModel.nextQuestionButton.style.display = "none";
+
+        let currentQuestion = this.quizModel.quizData.questions[Math.floor(Math.random()*this.quizModel.quizData.questions.length)];
+        this.answerFeedback = currentQuestion.answerFeedbackText;
+        this.quizModel.correctAnswerIndex = currentQuestion.correctAnswerIndex;
+        this.quizModel.questionText.innerHTML = currentQuestion.questionText;
+
+        $.each(currentQuestion.answerOptions, (i, answerOption) => {
+            this.quizModel.options[i].classList.remove("correctAnswer");
+            this.quizModel.options[i].classList.remove("wrongAnswer");
+            this.quizModel.options[i].classList.remove("selectedAnswer");
+
+            for (const child of this.quizModel.options[i].children)
+            {
+                if(child.classList.contains("material-icons"))
+                {
+                    child.style.display = "block";
+                    child.innerHTML = "";
+                    child.classList.remove("correctAnswerColor");
+                    child.classList.remove("wrongAnswerColor");
+                }
+
+                if(child.classList.contains("text-1"))
+                {
+                    child.innerHTML = answerOption;
+                }
+            }
+        });
+
+        this.quizModel.currentQuestion = currentQuestion;
+
+    }
+
+    function getAnswer(quizID)
+    {
+        let hasAnswer = false;
+        for (let i=0; i<this.quizModel.options.length; i++) {
+
+            if(this.quizModel.options[i].classList.contains("selectedAnswer"))
+            {
+                hasAnswer = true
+            }
+        }
+
+        if(!hasAnswer)
+        {
+            this.quizModel.feedbackText.innerHTML = "Du hast keine Antwort ausgewählt!";
+            return;
+        }
+
+        //verarbeite antwort
+        this.quizModel.feedbackText.innerHTML = this.answerFeedback;
+
+        this.quizModel.showAnswerButton.style.display = "none";
+        this.quizModel.nextQuestionButton.style.display = "block";
+
+        for (let i=0; i<this.quizModel.options.length; i++) {
+
+            this.quizModel.options[i].classList.remove("selectedAnswer");
+
+            if(i === this.quizModel.correctAnswerIndex)
+            {
+                this.quizModel.options[i].classList.add("correctAnswer");
+                for (const child of this.quizModel.options[i].children)
+                {
+                    if(child.classList.contains("material-icons"))
+                    {
+                        child.style.display = "block";
+                        child.innerHTML = "check";
+                        child.classList.add("correctAnswerColor");
+                    }
+                }
+            }
+            else
+            {
+                this.quizModel.options[i].classList.add("wrongAnswer");
+                for (const child of this.quizModel.options[i].children)
+                {
+                    if(child.classList.contains("material-icons"))
+                    {
+                        child.style.display = "block";
+                        child.innerHTML = "clear";
+                        child.classList.add("wrongAnswerColor");
+                    }
+                }
+            }
+        }
+    }
+
+    function selectAnswer(answerIndex, quizID)
+    {
+        // let currentQuiz =  quizModels.find(quiz => quiz.quizID === quizID);
+
+        for (let i=0; i<this.quizModel.options.length; i++) {
+            if(i === answerIndex)
+            {
+                this.quizModel.options[i].classList.add("selectedAnswer");
+            }
+            else
+            {
+                this.quizModel.options[i].classList.remove("selectedAnswer");
+            }
+        }
+    }
+    init("generalQuiz");
+</script>
+</html>
